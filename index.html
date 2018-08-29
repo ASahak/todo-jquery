@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <div class="yndanur">
+            <p class="tod"></p>
+            <p class="karechnvi"></p>
+            <ul>
+                <label><input id="selectall" type="checkbox">
+                <i class="fa fa-chevron-down fa fa-2x hover_icon" aria-hidden="true"></i></label>
+                
+                
+                
+                <!--<li><i class="fa fa-chevron-down fa fa-2x checkAll" aria-hidden="true"></i></li>-->
+                
+                <li><input type="text" placeholder="What needs to be done" class="input" id="login" ></li>
+
+            </ul>
+        </div>   
+        <div id="per"></div>
+        <p class="count"></p>
+        <div class="active_commponent">
+        <p class="del">
+            <a class="active" id="hvr-shutter-out-horizontal">Active</a>
+            <a class="commpact" id="hvr-shutter-out-horizontal">Commpact</a>
+        </p>    
+            <input type="submit" class="jnjel" value="Delete" id="hvr-bounce-out">
+        </div>
+        <p class="bottom"><span>Programing by Front-End Developer <b class="hover">Arthur <span class="art"></span></b></span><span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+           
+        </p>
+    </body>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script src="index.js"></script>
+<script>
+    
+  $( function() {
+    $( "#per" ).sortable();
+    $( "#per" ).disableSelection();
+  } );
+  </script>
+</html>
